@@ -1,0 +1,69 @@
+@import url(../vendor/normalize.css);
+
+@import url(../vendor/fonts/fonts.css);
+
+@import url(../blocks/page/page.css);
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__title/header__title.css);
+
+@import url(../blocks/why/why.css);
+@import url(../blocks/why/__title/why__title.css);
+@import url(../blocks/why/__subtitle/why__subtitle.css);
+
+.pleaseb {
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  background-image: url(../images/logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-top: 25px;
+  transition: 0.2s ease-in;
+}
+
+.pleaseb:hover {
+  background-image: url(../images/play.png);
+}
+
+.span {
+  margin: 0;
+  font-style: oblique;
+}
+
+.popup {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255 , 0.7);
+}
+
+.popup__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/hur.png);
+  width: 500px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.popup__title {
+  color: red;
+}
+
+.popup_opened {
+  display: flex;
+}
